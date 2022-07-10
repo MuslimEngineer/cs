@@ -1,4 +1,7 @@
 
+// www.patika.dev
+// https://www.hackerrank.com/challenges/30-operators/problem
+//https://app.patika.dev/courses/csharp-101/5-operatorler
 
 using System;
 using System.Collections.Generic;
