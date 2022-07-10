@@ -1,3 +1,6 @@
+//https://app.patika.dev/courses/csharp-101/4-degiskenler
+// www.patika.dev
+
 using System;
 using System.Collections.Generic;
 using System.IO;
