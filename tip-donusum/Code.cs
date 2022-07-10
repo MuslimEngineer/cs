@@ -1,8 +1,8 @@
 
 // www.patika.dev
-// https://www.hackerrank.com/challenges/30-operators/problem
-//https://app.patika.dev/courses/csharp-101/5-operatorler
-
+// https://www.hackerrank.com/challenges/solve-me-first//problem
+//https://app.patika.dev/courses/csharp-101/6-tip-donusumleri
+///solve-me-first/
 using System;
 using System.Collections.Generic;
 using System.IO;
