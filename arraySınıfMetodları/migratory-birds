@@ -1,3 +1,9 @@
+/* 
+you can tryna to solve it problem yourself ,
+ if you fail ,can look the solution
+*/
+//https://www.hackerrank.com/challenges/migratory-birds/problem
+
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Collections;
@@ -15,24 +21,18 @@ using System;
 class Result
 {
 
-    /*
-     * Complete the 'migratoryBirds' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY arr as parameter.
-     */
-
-    public static int migratoryBirds(List<int> arr,int l)
+    public static int migratoryBirds(List<int> arr,int l)//l=arr.Lenght
     {
         int[] birdTypeCounts = new int[6];
         int mxx=0;
+        //count the repeated  numbers
         for (int i = 0; i<l; i++)
-           birdTypeCounts[arr[i] ]++;
-           
+         birdTypeCounts[arr[i] ]++;
+           // getting the max repeated number
            foreach(int ss in birdTypeCounts)
            if (mxx<ss)
            mxx=ss;
-    
+             //returned the index for max repeated
             for (int i = 1; i<6; i++){
             if (birdTypeCounts[i ] ==mxx)
             return i;
@@ -46,17 +46,17 @@ class Solution
 {
     public static void Main(string[] args)
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);// only hackerrank ide
 
-        int arrCount = Convert.ToInt32(Console.ReadLine().Trim());
+        int arrCount = Convert.ToInt32(Console.ReadLine().Trim());//input lenght
 
-        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();//input numbers 
 
-        int result = Result.migratoryBirds(arr,arrCount);
+        int result = Result.migratoryBirds(arr,arrCount);//arrCount =arr.lenght
 
-        textWriter.WriteLine(result);
+        textWriter.WriteLine(result);//only hackerrank ide
 
-        textWriter.Flush();
-        textWriter.Close();
+        textWriter.Flush();//only hackerrank ide
+        textWriter.Close();//only hackerrank ide
     }
 }
